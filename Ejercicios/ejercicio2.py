@@ -3,16 +3,16 @@ print(f'|*****{titulo:^50}******| \n')
 
 num_uni= int(input('Ingresa el numero de productos que estas comprando: '))
 if num_uni> 0:
-    precio= float(input('Ingrese el precio del producto'))
+    precio= float(input('Ingrese el precio del producto: '))
     if precio > 0:
-        tiene_tarjeta=input('¿Tiene tarjeta de fidelidad?')
+        tiene_tarjeta=input('¿Tiene tarjeta de fidelidad?: ').upper()
         precio_total= precio * num_uni
         descuento=0
         precio_desc=precio_total
         if num_uni < 5:
             print("Sin descuento")
         elif num_uni >= 5 and num_uni <= 10:
-            if tiene_tarjeta == 'si':
+            if tiene_tarjeta == 'Si' or tiene_tarjeta == 'S':
                 descuento = (precio_total * 15) / 100
                 precio_desc = precio_total - descuento
             else:
@@ -29,9 +29,9 @@ if num_uni> 0:
         print(f'El numero de unidades adquiridas es: {num_uni}')
         print(f'El precio unitario por unidad es: {precio}')
         print(f'el usuario tiene tarjeta de fidelidad: {tiene_tarjeta}')
-        print(f' el importe bruto es: {precio_total:.2f}')
-        print(f'El descuento aplicado es: {descuento:.2f}')
-        print(f'El importe final de la compra es: {precio_desc}')
+        print(f' el importe bruto es: {precio_total:.2f} euros')
+        print(f'El descuento aplicado es: {descuento:.2f} euros')
+        print(f'El importe final de la compra es: {precio_desc:.2f} euros')
 
         pago = int(input('Ingrese la cantidad con la que desea pagar: '))
         if pago > precio_desc:
@@ -48,7 +48,7 @@ if num_uni> 0:
 else:
     print("Unidade no validas")
 
-
+print("FIN DEL PROGRAMA")
 
 
 
