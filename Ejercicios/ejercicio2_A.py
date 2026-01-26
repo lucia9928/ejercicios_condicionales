@@ -14,7 +14,7 @@ if unidades <= 0:                               # VALIDACION UNIDADES
 elif precio <= 0.0:                             # VALIDACION PRECIO
     print('El precio es incorrecto')
 else:                                           # esta OK
-    # Calculo del descuento
+# Calculo del descuento
     if unidades < 5:
         tasa_descuento = 0.0
     elif 5 <= unidades <= 10:
