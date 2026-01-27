@@ -54,3 +54,34 @@ else:
     print(f'sumatorio: {sumatorio}')
 
 print("fin")
+
+#BUCLE FOR -------------------------------------------------------------
+''' 
+1- EJECUTAR el codigo un determinado numero de veces conocido
+2- recorrer una secuencia de valores 
+'''
+
+for numero in range(3):
+    print("hola")
+
+#FOR PARA RECORRER UNA SECUENCIA DE VALORES
+#range -> un argumento te genera valores de 0 a n -1 =range(n)
+for numero in range(10):
+    print(f" 7 x {numero} = {numero*7}")
+
+
+#range(a,b) genera una secuencia de a incluido a b excluido
+for numero in range(100,201):
+    print(numero)
+
+#range(a,b, paso)
+for numero in range(1,10,2):
+    print(numero)
+
+lista=[10,2,4,55,8,70,10,15] #lista
+for numero in lista:
+    print(numero)
+
+texto="HOLAAAAAAA!!!!!"
+for letra in texto:
+    print(letra)
