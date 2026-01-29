@@ -11,6 +11,6 @@ multiplicar del 1 al 10 del siguiente modo:
 '''
 for numero2 in range(1, 11):
     for numero in range(1,11):
-        print(numero, end="\t")
-    print(numero2,f' {numero2*numero}')
+        print(numero2*numero, end="\t")
+    print()
 
