@@ -18,7 +18,7 @@ while True:
             print('Adios')
             break
         else:
-            # Lanza error Exception por operacion desconocida
+            #Lanza error Exception por operacion desconocida
             raise Exception('Operacion no reconocida')
     except ValueError:
         # Maneja si el input no es convertible a número
